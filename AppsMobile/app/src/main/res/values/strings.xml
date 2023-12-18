@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">JettDhilz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="judul_menu_profil">Profil</string>
+    <string name="deskripsi_event">Tunjukkan dukungan Anda pada komunitas seniman lokal dengan menghadiri pameran seni terbaru kami yang memukau, yang akan memamerkan karya-karya terbaru dan paling inspiratif. Bergabunglah dengan kami di malam konser musik spektakuler yang akan menampilkan bakat-bakat musik terbaik kota ini. Ini adalah kesempatan sempurna untuk bersenang-senang dengan teman dan keluarga sambil mendukung seni dan budaya lokal. Jangan lewatkan kesempatan ini untuk menjelajahi dunia seni dan musik dalam satu event yang penuh semangat.</string>
+    <string name="judul_menu_status">status</string>
+    <string name="judul_menu_layanan">layanan</string>
+    <string name="judul_menu_home">home</string>
+    <string name="viewtopkonfirmfituradvis">SURAT ADVIS</string>
+    <string name="viewtopformuliradvis">Formulir Surat Advis</string>
+    <string name="viewtopkonfirmfiturnis">NOMOR INDUK SENIMAN</string>
+    <string name="viewtopformulirnis">Formulir Regristrasi Nomor Induk Seniman</string>
+    <string name="jeniskelamin">Pilih Jenis Kelamin</string>
+    <string-array name="jenis_kelamin_array">
+        <item>Pilih Jenis Kelamin</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="tipe_seniman_array">
+        <item>Pilih Tipe Seniman</item>
+        <item>Perseorangan</item>
+        <item>Organisasi</item>
+    </string-array>
+    <string-array name="kecamatan_array">
+        <item>Pilih Kecamatan</item>
+        <item>nganjuk</item>
+        <item>ngetos</item>
+        <item>berbek</item>
+        <item>loceret</item>
+        <item>pace</item>
+        <item>prambon</item>
+        <item>ngronggot</item>
+        <item>kertosono</item>
+        <item>patianrowo</item>
+        <item>baron</item>
+        <item>tanjunganom</item>
+        <item>sukomoro</item>
+        <item>bagor</item>
+        <item>wilangan</item>
+        <item>rejoso</item>
+        <item>gondang</item>
+        <item>ngluyu</item>
+        <item>lengkong</item>
+        <item>jatikalen</item>
+    </string-array>
+
+
+</resources>

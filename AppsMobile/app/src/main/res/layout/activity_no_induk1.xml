@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.NoInduk1">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginRight="-10dp"
+        android:backgroundTint="@color/white"
+        app:strokeWidth="@dimen/_1sdp"
+        app:strokeColor="@color/gray"
+        android:outlineAmbientShadowColor="@color/black"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="SILAHKAN PILIH MENU"
+                    android:textColor="@color/greendark"
+                    android:textSize="@dimen/_18ssp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/indukback"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back"
+                android:backgroundTint="@color/white"
+                android:scaleType="fitXY"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnRegisInduk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:backgroundTint="@color/greendark"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:src="@drawable/regis"
+                        android:layout_marginStart="@dimen/_3sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Registrasi Nomor Induk Seniman"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_18ssp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnPerpanjangInduk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:backgroundTint="@color/orange"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:src="@drawable/perpanjang"
+                        android:layout_marginStart="@dimen/_3sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perpanjangan Nomor Induk Seniman"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_18ssp"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".Activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+            <TextView
+                android:fontFamily="@font/robotomedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="SELAMAT DATANG DI\nNGANJUK ELOK"
+                android:textSize="@dimen/_28ssp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:src="@drawable/logodisporabudpar"
+                android:layout_marginBottom="-10dp"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="fitXY"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Email"
+                android:layout_margin="@dimen/_7sdp"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:boxStrokeColor="@color/greendark"
+                app:boxStrokeWidth="@dimen/_2sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_emailSignin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Kata Sandi"
+                android:layout_margin="@dimen/_7sdp"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:boxStrokeColor="@color/greendark"
+                app:boxStrokeWidth="@dimen/_2sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:boxCornerRadiusBottomEnd="@dimen/_5sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_5sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_passwordSignin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeActionId="6"
+                    android:imeActionLabel="Sign In"
+                    android:imeOptions="actionDone"
+                    android:drawableRight="@drawable/ic_eye"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btn_lupapassword"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Lupa kata sandi?"
+                android:textStyle="italic"
+                android:layout_gravity="right"
+
+                android:textColor="@color/greendark"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_minus10sdp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_siginSignin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:text="Masuk"
+                android:textSize="@dimen/_17ssp"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:shadowRadius="3"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:textAllCaps="false"
+                android:shadowDy="7"
+                android:shadowDx="5"
+                android:shadowColor="@color/black"
+                android:textColor="@color/white"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:backgroundTint="@color/greendark"/>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Belum punya akun?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14ssp" />
+                        <TextView
+                            android:id="@+id/button_signupSignin"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:textSize="@dimen/_14ssp"
+                            android:text="Daftar Disini"/>
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="atau"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="#000" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:id="@+id/logingoogle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Masuk Dengan Akun Google"
+                android:textSize="@dimen/_12ssp"
+                android:drawableLeft="@drawable/gogle"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_30sdp"
+                app:cornerRadius="@dimen/_10sdp"
+                android:shadowRadius="3"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:strokeColor="@color/black"
+                app:strokeWidth="@dimen/_1sdp"
+                app:backgroundTint="@color/white" />
+            <TextView
+                android:id="@+id/texterror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:textSize="@dimen/_14ssp"
+                android:text="ehrjhnerfhnerhnfernfjerneirnfnhernf"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

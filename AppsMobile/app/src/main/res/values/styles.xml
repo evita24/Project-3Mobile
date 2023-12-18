@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+    <item name="android:background">@drawable/button_custom</item>
+    <item name="android:textColor">#FFFFFF</item>
+</style>
+    <style name="BottomNavigationItemTextActive">
+<!--        <item name="app:itemIconTint">@color/greendark</item>-->
+<!--        <item name="app:itemTextColor">@color/greendark</item>-->
+    </style>
+    <style name="circularImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="CustomHintTextAppearance">
+        <item name="android:textColor">@color/red_color</item>
+    </style>
+
+</resources>

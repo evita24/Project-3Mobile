@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logonganjuk"
+        android:label="Nganjuk Elok"
+        android:roundIcon="@drawable/logonganjuk"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.UsingPreferences"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.FormEventDiterimaDiproses"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormEventDitolak"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormEventDiajukan"
+            android:exported="false" />
+        <activity
+        android:name=".Activity.FormulirPeminjamanTempat"
+        android:exported="false" />
+        <activity
+            android:name=".Activity.PilihTanggalAwalPeminjaman"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PinjamTempatList"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormStatusPinjamDibatalkan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormTempatDiajukan2"
+            android:exported="false" />
+        <activity
+            android:name=".MenuFragment.StatusPinjam"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LihatKode_Pinjam"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormSenimanDiterima"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormSenimanDiproses"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormPerpanjanganDiajukan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormPerpanjanganDitolak"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormPerpanjanganDiproses"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormPerpanjanganDiterima"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.FormSenimanDiajukan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityLihatKodeSeniman"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ActivityLihatKodePerpanjangan"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.ActivityLihatKodeSurat"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="fadil" />
+
+        <service
+            android:name=".Eksternal.NotifService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name=".Activity.kodeStatusDiterima"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KodeOtpLupa"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TentangKamiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormAdvisDiproses"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormAdvisDiajukan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PusatBantuanProfil"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.GantiPasswordProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailEventDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormAdvisDitolak"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormSenimanDitolak"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormAdvisDiterima"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormulirUploadEvent"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmMenu.KonfirmasiAwalEvent"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmMenu.PengajuanBerhasilTerkirim"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FormulirSuratAdvisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmMenu.KonfirmasiKeAdvis"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NoInduk6"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NoInduk4"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NoInduk3"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NoInduk2"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NoInduk1"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmMenu.BerhasilGantiSandi"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmMenu.BerhasilDaftar"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.KodeOtp"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LupaKatasandi"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmMenu.SelamatDatang"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activity.AturUlangKataSandi"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Base.Theme.UsingPreferences">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
